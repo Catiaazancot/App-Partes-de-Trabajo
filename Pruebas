@@ -35,14 +35,19 @@ Resultado: satisfactorio a nivel funcional, con precisión pendiente de validaci
 separar múltiples intervenciones y gestionar incertidumbre mediante validación humana.
 
 
-Prueba 4 — Edición de una experiencia. OK
+Prueba 4 – Edición de experiencias
+Se comprueba que una experiencia previamente almacenada puede abrirse, modificarse y guardarse nuevamente. Resultado: satisfactorio.
 
-Prueba 5 – Filtros: verificaremos fecha, tipo de avión, matrícula, ATA y búsqueda por tarea. OK
+Prueba 5 – Consulta y filtrado
+Se validan los mecanismos de consulta y filtrado disponibles en el histórico: fechas, tipo de avión, matrícula, ATA y búsqueda sobre la tarea realizada. Resultado: satisfactorio.
 
-Prueba 6 – Eliminación: eliminaremos un registro y comprobaremos que desaparece del histórico y se actualizan los contadores. OK
+Prueba 6 – Eliminación
+Se comprueba la posibilidad de eliminar registros del histórico y la actualización posterior de la información mostrada. Resultado: satisfactorio.
 
-Prueba 7 – Reporte: Completaremos primero el perfil y después comprobaremos qué genera actualmente Generar reporte. 
-Ahí compararemos la salida con el Logbook_FVV.pdf de Skyhook que proporcionó Manuel, que incluye datos del mecánico/licencia, periodo y detalle de las experiencias.
+Prueba 7 – Generación del reporte
+Se comprueba el proceso de generación del registro profesional a partir de las experiencias almacenadas. Antes de generar el documento, la aplicación presenta una pantalla de revisión y posteriormente permite descargar el resultado en PDF.
+
+El documento generado incorpora los datos profesionales del usuario, periodo, número de experiencias y detalle de los trabajos registrados, finalizando con declaración, fecha y espacio para firma. Resultado: satisfactorio.
 
 
 
