@@ -1,0 +1,41 @@
+Caso de prueba 1 – Extracción de experiencia desde TLB
+
+Se realiza una primera prueba utilizando una fotografía real de un Technical Logbook facilitado por el cliente. 
+La aplicación procesa el documento y genera automáticamente un registro estructurado con los seis campos definidos para la PoC: fecha, matrícula, localización, tipo de avión, tarea realizada y ATA.
+
+El registro se incorpora correctamente al histórico del usuario, quedando disponible para su posterior consulta, edición, eliminación y filtrado.
+
+Resultado: satisfactorio. La primera prueba confirma la viabilidad funcional del proceso de extracción y registro automático sobre documentación real.
+
+Eso sí: una prueba correcta no valida todavía el reconocimiento de TLB en general. Precisamente los documentos de Manuel tienen formatos muy diferentes, 
+que es el principal riesgo que detectamos. Ahora probaría otro formato completamente distinto y algo más difícil, y después uno claramente manuscrito. Ahí veremos si el resultado ha sido casualmente bueno con este formato o si el enfoque realmente generaliza.
+
+
+Caso de prueba 2 – Variabilidad de formato y detección múltiple
+
+Se realiza una segunda prueba utilizando un parte de trabajo con un formato diferente al empleado en la primera validación y con información manuscrita.
+
+La aplicación identifica automáticamente que el documento contiene dos experiencias independientes, generando un registro separado para cada una. 
+Para ambas experiencias se extraen los campos definidos en la PoC: fecha, matrícula, localización, tipo de avión, ATA y tarea realizada.
+
+Adicionalmente, la solución diferencia correctamente el ATA y la descripción correspondiente a cada intervención, manteniendo los datos comunes de aeronave, matrícula, fecha y localización.
+
+Resultado: satisfactorio. La prueba aporta evidencia inicial de que el reconocimiento no depende exclusivamente de un único formato documental y 
+demuestra además capacidad para identificar múltiples experiencias dentro de un mismo documento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prueba 3 – Documento difícil/manuscrito. Elegimos uno de peor calidad o con bastante escritura manual. Aquí nos interesa descubrir los límites.
+Prueba 4 – Varias tareas en un documento. Comprobar que, si aparecen varias experiencias, Base44 crea varios registros y no mezcla la información.
+Si esas pruebas son razonables, pasamos a probar filtros, edición y eliminación.
+Finalmente configuramos y validamos Generar reporte, comparándolo con Logbook_FVV, que es la referencia de Skyhook que envió Manuel. Ese reporte contiene, además de las experiencias, los datos fijos del mecánico y licencia
