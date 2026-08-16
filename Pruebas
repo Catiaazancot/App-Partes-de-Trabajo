@@ -35,6 +35,15 @@ Resultado: satisfactorio a nivel funcional, con precisión pendiente de validaci
 separar múltiples intervenciones y gestionar incertidumbre mediante validación humana.
 
 
+Prueba 4 — Edición de una experiencia. OK
+
+Prueba 5 – Filtros: verificaremos fecha, tipo de avión, matrícula, ATA y búsqueda por tarea. OK
+
+Prueba 6 – Eliminación: eliminaremos un registro y comprobaremos que desaparece del histórico y se actualizan los contadores. OK
+
+Prueba 7 – Reporte: Completaremos primero el perfil y después comprobaremos qué genera actualmente Generar reporte. 
+Ahí compararemos la salida con el Logbook_FVV.pdf de Skyhook que proporcionó Manuel, que incluye datos del mecánico/licencia, periodo y detalle de las experiencias.
+
 
 
 
