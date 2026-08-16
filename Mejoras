@@ -1,1 +1,8 @@
+Como posibles evoluciones, sin necesidad de desarrollarlas ahora en la PoC:
 
+Mostrar la imagen original junto a los campos detectados durante la revisión para facilitar la comprobación.
+Precargar automáticamente el email de la cuenta en el perfil.
+Mejorar posteriormente los indicadores de confianza de los campos detectados.
+Eliminar los elementos propios de demostración antes de presentar una versión final al cliente.
+Revisar específicamente la experiencia de captura y validación desde móvil.
+Adaptar el diseño definitivo del reporte al formato profesional requerido.
