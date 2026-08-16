@@ -1,0 +1,11 @@
+Caso de prueba 1 – Extracción de experiencia desde TLB
+
+Se realiza una primera prueba utilizando una fotografía real de un Technical Logbook facilitado por el cliente. 
+La aplicación procesa el documento y genera automáticamente un registro estructurado con los seis campos definidos para la PoC: fecha, matrícula, localización, tipo de avión, tarea realizada y ATA.
+
+El registro se incorpora correctamente al histórico del usuario, quedando disponible para su posterior consulta, edición, eliminación y filtrado.
+
+Resultado: satisfactorio. La primera prueba confirma la viabilidad funcional del proceso de extracción y registro automático sobre documentación real.
+
+Eso sí: una prueba correcta no valida todavía el reconocimiento de TLB en general. Precisamente los documentos de Manuel tienen formatos muy diferentes, 
+que es el principal riesgo que detectamos. Ahora probaría otro formato completamente distinto y algo más difícil, y después uno claramente manuscrito. Ahí veremos si el resultado ha sido casualmente bueno con este formato o si el enfoque realmente generaliza.
