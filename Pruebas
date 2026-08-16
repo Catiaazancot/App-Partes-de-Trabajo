@@ -24,6 +24,15 @@ Resultado: satisfactorio. La prueba aporta evidencia inicial de que el reconocim
 demuestra además capacidad para identificar múltiples experiencias dentro de un mismo documento.
 
 
+Caso de prueba 3 – Documento complejo, manuscrito y con múltiples intervenciones
+
+Se procesa una fotografía real de un Cabin Defects Log con estructura diferente a las pruebas anteriores, información manuscrita y tres intervenciones independientes (B1, B2 y B3).
+
+La aplicación identifica 3 experiencias diferenciadas y extrae información individual para cada una. En aquellos campos donde el sistema no determina la información con suficiente confianza, 
+activa el estado “Revisar” o deja el campo sin completar, permitiendo al usuario corregirlo antes del guardado.
+
+Resultado: satisfactorio a nivel funcional, con precisión pendiente de validación en determinados campos. La prueba demuestra capacidad para interpretar documentación heterogénea, 
+separar múltiples intervenciones y gestionar incertidumbre mediante validación humana.
 
 
 
@@ -33,9 +42,3 @@ demuestra además capacidad para identificar múltiples experiencias dentro de u
 
 
 
-
-
-Prueba 3 – Documento difícil/manuscrito. Elegimos uno de peor calidad o con bastante escritura manual. Aquí nos interesa descubrir los límites.
-Prueba 4 – Varias tareas en un documento. Comprobar que, si aparecen varias experiencias, Base44 crea varios registros y no mezcla la información.
-Si esas pruebas son razonables, pasamos a probar filtros, edición y eliminación.
-Finalmente configuramos y validamos Generar reporte, comparándolo con Logbook_FVV, que es la referencia de Skyhook que envió Manuel. Ese reporte contiene, además de las experiencias, los datos fijos del mecánico y licencia
