@@ -1,0 +1,76 @@
+Resumen funcional de la interfaz – PoC LogbookAero
+
+La PoC cuenta actualmente con una interfaz sencilla orientada a cubrir el flujo principal de registro y consulta de experiencia aeronáutica. La navegación se estructura en Inicio, Mi experiencia, Añadir y Perfil.
+
+1. Inicio
+
+Actúa como panel principal del usuario y ofrece una visión rápida de su registro de experiencia.
+
+Incluye:
+
+Número total de experiencias registradas.
+Número de tipos de aeronave diferentes.
+Fecha de la última experiencia.
+Acceso destacado a Añadir experiencia.
+Sección de últimas experiencias registradas.
+Acceso a la consulta completa mediante Ver todas.
+Actualmente existe también un botón para cargar datos de demostración.
+2. Mi experiencia
+
+Es el histórico de experiencia profesional acumulada por el mecánico.
+
+Permite consultar y filtrar los registros mediante:
+
+Fecha desde/hasta.
+Tipo de avión.
+Matrícula.
+ATA.
+Búsqueda por texto dentro de la tarea realizada.
+Ordenación por fecha.
+
+Desde esta sección se contempla además la opción de Generar reporte, que utilizará la experiencia registrada/filtrada para crear el documento que posteriormente pueda presentar el mecánico a una empresa.
+
+3. Añadir experiencia
+
+Es la funcionalidad principal de la aplicación.
+
+Dispone de tres vías:
+
+Hacer una foto del parte de trabajo desde el dispositivo.
+Subir un documento existente en JPG, PNG o PDF.
+Añadir manualmente una experiencia.
+
+Una vez seleccionado el documento, el botón Analizar documento deberá procesarlo mediante IA para identificar automáticamente los campos definidos para la PoC:
+
+Fecha · Matrícula · Localización · Tipo de avión · Tarea realizada · ATA
+
+Posteriormente, el usuario deberá poder revisar y corregir la información detectada antes de guardarla en su histórico.
+
+4. Perfil
+
+Contiene los datos personales y profesionales fijos del mecánico, que posteriormente se utilizarán para completar automáticamente el encabezado del reporte.
+
+Actualmente incluye:
+
+Nombre.
+Apellidos.
+Email.
+Teléfono.
+Número de licencia EASA.
+Fecha de expiración de la licencia.
+Número de empleado, opcional.
+
+También permite guardar los cambios y cerrar sesión.
+
+Mejoras identificadas para fases posteriores
+
+Por ahora no son prioritarias para validar la PoC, pero quedan documentadas:
+
+Email del perfil: precargar automáticamente el email utilizado para crear la cuenta, evitando que el usuario tenga que introducirlo nuevamente.
+Datos de demostración: eliminar el botón Cargar datos de demostración de la versión que se presente al cliente.
+Diseño/branding: mejorar posteriormente identidad visual, nombre, logotipo y acabados si se decide convertir la PoC en producto.
+UX móvil: revisar específicamente el comportamiento real desde teléfono, especialmente captura mediante cámara y revisión de campos.
+Reporte: adaptar el diseño final del PDF al formato profesional requerido una vez validado el flujo principal.
+Estados y mensajes: perfeccionar posteriormente mensajes de procesamiento, errores y campos que la IA no haya podido reconocer.
+
+Estado actual: la interfaz cubre correctamente el flujo funcional necesario para comenzar las pruebas. El siguiente punto crítico de la PoC será validar el procesamiento real de los TLB y la extracción automática de información mediante IA.
