@@ -1,0 +1,95 @@
+Flujo funcional de la aplicación
+
+La aplicación permite al mecánico gestionar su experiencia profesional mediante un flujo sencillo, desde la incorporación de un nuevo parte de trabajo hasta su consulta y posterior generación de un reporte.
+
+1. Acceso y perfil del usuario
+
+El usuario accede mediante su cuenta personal. Cada usuario dispone de un perfil donde puede registrar los datos que posteriormente formarán parte de su reporte:
+
+Nombre y apellidos.
+Email.
+Teléfono.
+Número de licencia EASA.
+Fecha de expiración de la licencia.
+Número de empleado, opcional.
+
+Estos datos se mantienen como información fija, evitando tener que introducirlos cada vez que se registra una experiencia.
+
+2. Incorporación de una nueva experiencia
+
+Desde Añadir experiencia existen tres formas de introducir información:
+
+ - Hacer una fotografía del parte de trabajo desde el dispositivo.
+ - Subir un documento existente, actualmente JPG, PNG o PDF.
+ - Añadir la experiencia manualmente, como alternativa cuando no se dispone del documento o no se desea utilizar el reconocimiento automático.
+
+3. Análisis automático del documento
+
+Cuando se utiliza una fotografía o documento, la aplicación lo procesa mediante IA para identificar automáticamente los campos mínimos definidos:
+
+Fecha · Matrícula · Localización · Tipo de avión · ATA · Tarea realizada
+
+El sistema puede además detectar varias intervenciones dentro de un mismo documento, generando experiencias independientes para cada una de ellas, como se ha comprobado durante las pruebas realizadas.
+
+4. Revisión y validación
+
+Antes de almacenar cualquier información, se muestra una pantalla con los datos detectados.
+
+El usuario puede:
+
+ - Revisar cada campo.
+ - Modificar cualquier valor incorrecto.
+ - Completar información que no haya podido reconocerse.
+ - Identificar campos marcados como “Revisar” cuando el sistema no tiene suficiente confianza.
+ - Revisar individualmente varias experiencias detectadas en un mismo documento.
+ - Volver a analizar el documento.
+ - Cancelar el proceso.
+
+Por tanto, la IA propone la información, pero es el usuario quien la valida antes de incorporarla a su histórico.
+
+5. Guardado de la experiencia
+
+Una vez revisados los datos, el usuario confirma el guardado. Cada intervención detectada pasa entonces a formar parte de Mi experiencia, creando un histórico personal y estructurado de los trabajos realizados.
+
+6. Consulta y gestión de experiencias
+
+Desde Mi experiencia, el usuario puede consultar todos los registros almacenados.
+
+Actualmente puede:
+
+- Consultar las experiencias en formato listado.
+- Editar una experiencia existente, permitiendo corregir posteriormente cualquiera de sus datos.
+- Eliminar una experiencia.
+- Ordenar los registros por fecha.
+- Buscar dentro de la descripción de las tareas.
+
+También dispone de filtros por:
+
+ - Periodo de fechas.
+ - Tipo de avión.
+ - Matrícula.
+ - ATA.
+
+Esto permite, por ejemplo, localizar únicamente la experiencia acumulada sobre un determinado tipo de aeronave.
+
+7. Dashboard / Inicio
+
+El Inicio funciona como resumen de la actividad del usuario y muestra:
+
+Número de experiencias registradas.
+Número de tipos de aeronave diferentes.
+Última experiencia registrada.
+Últimas experiencias incorporadas.
+Acceso directo para añadir una nueva experiencia.
+Acceso al histórico completo.
+
+8. Generación del reporte
+
+Desde Mi experiencia existe la opción Generar reporte.
+
+El objetivo de esta funcionalidad es utilizar las experiencias almacenadas —y, especialmente, las seleccionadas mediante los filtros— para generar 
+un documento profesional que el mecánico pueda utilizar para acreditar su experiencia ante una empresa.
+
+El reporte deberá combinar:
+
+Datos profesionales del perfil + periodo seleccionado + experiencias correspondientes y generar finalmente un documento descargable, tomando como referencia funcional el modelo de registro facilitado por Manuel.
